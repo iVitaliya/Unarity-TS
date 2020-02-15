@@ -9,6 +9,9 @@ export default class extends Event {
     run(bot: UnarityClient, message: Message) {
         if (message.author.bot) return;
 
+        message.member!.db;
+        message.guild!.db;
+
         if (!message.content.startsWith(message.guild!.db.prefix)) return;
         const [cmd, ...args] = message.content.trim().slice(1).split(" ");
         const command = bot.handler.getCommand(cmd);

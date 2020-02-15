@@ -12,6 +12,10 @@ declare module "discord.js" {
         embed(): UnarityEmbed;
     }
 
+    interface GuildMember {
+        db: any;
+    }
+
     interface Guild {
         db: any;
 
