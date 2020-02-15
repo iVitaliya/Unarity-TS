@@ -1,0 +1,35 @@
+{
+  "name": "unarity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaosPhoe/Unarity.git"
+  },
+  "keywords": [
+    "discord",
+    "discord",
+    "bot",
+    "javascript",
+    "discordjs"
+  ],
+  "author": "ChaosPhoe & Remuting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaosPhoe/Unarity/issues"
+  },
+  "homepage": "https://github.com/ChaosPhoe/Unarity#readme",
+  "dependencies": {
+    "@types/mongoose": "^5.7.1",
+    "beautify": "0.0.8",
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.6.5",
+    "node-fetch": "^2.6.0",
+    "util": "^0.12.1"
+  }
+}
