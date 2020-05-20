@@ -17,7 +17,7 @@
     "javascript",
     "discordjs"
   ],
-  "author": "ChaosPhoe & Remuting",
+  "author": "ChaosPhoe & Mochi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChaosPhoe/Unarity/issues"
@@ -25,6 +25,8 @@
   "homepage": "https://github.com/ChaosPhoe/Unarity#readme",
   "dependencies": {
     "@types/mongoose": "^5.7.1",
+    "@types/node": "^14.0.4",
+    "@types/node-fetch": "^2.5.7",
     "beautify": "0.0.8",
     "discord.js": "github:discordjs/discord.js",
     "dotenv": "^8.2.0",
