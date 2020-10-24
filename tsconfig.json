@@ -1,18 +1,21 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "conv",
-    "removeComments": true,
-    "declaration": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true
+      "esModuleInterop": true,
+      "target": "ESNext",
+      "module": "CommonJS",
+      "removeComments": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "noImplicitThis": true,
+      "outDir": "bin",
+      "pretty": true,
+      "resolveJsonModule": true
   },
   "include": [
-    "src"
+      "src", "module.d.ts"
+  ],
+  "exclude": [
+      "bin"
   ]
 }
