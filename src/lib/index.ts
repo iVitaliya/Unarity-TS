@@ -4,8 +4,8 @@ export {Colorizer} from './Core/Colorizer';
 export {Logger} from './Core/Logger';
 
 /* Base */
-    /* Command */
-    export {CommandData} from './Base/Command/Command.interface';
+export {CommandData} from './Base/Command/Command.interface';
+export {Command} from './Base/Command/Command.class';
 
 /* Client */
 export {PragmaClient} from './Client/PragmaClient';
@@ -13,3 +13,4 @@ export {PragmaClient} from './Client/PragmaClient';
 /* Util */
 export {searchQuery} from './Utils/functions';
 export {Utilities} from './Utils/Utilities';
+export {Pages} from './Utils/Pages';

@@ -1,19 +1,25 @@
 // Packages
-import {Client, Collection} from 'eris';
+import {Client} from 'eris';
 
 // Files
-import {Datifier, Logger, Utilities} from '../index';
+import {Datifier, Logger, Utilities, Pages, Command} from '../index';
 
 // Class
 class PragmaClient extends Client {
     public datifier: typeof Datifier;
     public logger: typeof Logger;
+    public utilities: typeof Utilities;
+    public pages: typeof Pages;
     
     public db: any;
     public prefix: any;
 
     public commands: Map<string, Command> = new Map();
-    
+    public aliases: Map<string, string> = new Map();
+    public cooldown: Map<string, any> = new Map();
+    public snipes: Map<string, any> = new Map();
+    public ghostPings: Map<string, any> = new Map();
+
     constructor() {
         super(process.env.DISCORD ? process.env.DISCORD : "NzY5NjA5ODc2OTM3NjM3OTE4.X5RhDQ.7cwfgldxRy1Drj8XZm4B2qP_PDc", {
             autoreconnect: true,
@@ -23,7 +29,11 @@ class PragmaClient extends Client {
             reconnectAttempts: 3,
         });
 
+        this.datifier = Datifier;
+        this.logger = Logger;
 
+        this.utilities = Utilities;
+        this.pages = Pages;
     }
 }; 
 
