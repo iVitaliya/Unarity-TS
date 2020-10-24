@@ -2,17 +2,20 @@
 import {Client} from 'eris';
 
 // Files
-import {Datifier, Logger, Utilities, Pages, Command} from '../index';
+import {Datifier, Logger, Utilities, Handler, Pages, Command} from '../index';
 
 // Class
 class PragmaClient extends Client {
     public datifier: typeof Datifier;
     public logger: typeof Logger;
     public utilities: typeof Utilities;
+    public handler: Handler;
     public pages: typeof Pages;
     
-    public db: any;
+    public economy: any;
+    public database: any;
     public prefix: any;
+    public language: any;
 
     public commands: Map<string, Command> = new Map();
     public aliases: Map<string, string> = new Map();
@@ -33,7 +36,14 @@ class PragmaClient extends Client {
         this.logger = Logger;
 
         this.utilities = Utilities;
+        this.handler = new Handler();
         this.pages = Pages;
+    }
+
+    async start() {
+        await this.handler.commands.load('../../Commands');
+
+        super.connect();
     }
 }; 
 

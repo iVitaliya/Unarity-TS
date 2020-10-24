@@ -9,6 +9,7 @@ export {Command} from './Base/Command/Command.class';
 
 /* Client */
 export {PragmaClient} from './Client/PragmaClient';
+export {Handler} from './Client/PragmaHandler';
 
 /* Util */
 export {searchQuery} from './Utils/functions';

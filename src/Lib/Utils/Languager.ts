@@ -22,8 +22,20 @@ class Languager {
             case "english":
                 return language.english;
 
-            case "":
+            case "german":
+                return language.german;
+
+            case "french":
+                return language.french;
+
+            case "spanish":
                 return language.spanish;
+
+            case "russian":
+                return language.russian;
         }
     }
 };
+
+// Exports
+export {Languager};
