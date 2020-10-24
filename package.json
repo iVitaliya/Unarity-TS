@@ -2,7 +2,7 @@
   "name": "kichi-chan",
   "version": "1.0.2",
   "description": "We first started this as a normal JavaScript project<br/>\r but now we're starting to really work on this just in <br/>\r TypeScript!",
-  "main": "bin/KichiChan.js",
+  "main": "bin/Vixen.js",
   "dependencies": {
     "@types/node": "^14.14.2",
     "@types/node-fetch": "^2.5.7",
