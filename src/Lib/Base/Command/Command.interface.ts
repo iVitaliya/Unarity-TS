@@ -5,9 +5,10 @@ interface CommandData {
     aliases?: string[] | string;
     usages: string[] | string;
     examples: string[] | string;
+    description: string;
 
-    clientPermissions: string;
-    userPermissions: string;
+    clientPermissions?: string;
+    userPermissions?: string;
     member: boolean;
     helper: boolean;
     moderator: boolean;
