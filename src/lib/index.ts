@@ -1,4 +1,7 @@
 /* Core */
+export {Datifier} from './Core/Datifier';
+export {Colorizer} from './Core/Colorizer';
+export {Logger} from './Core/Logger';
 
 /* Base */
 
@@ -6,4 +9,4 @@
 
 
 /* Util */
-export {searchQuery} from './utils/functions';
+export {searchQuery} from './Utils/functions';
