@@ -33,5 +33,17 @@ class Utilities {
 
 	capitalise(strn: string): string {
 		return strn.split(' ').map(str => str.slice(0, 1).toUpperCase() + str.slice(1)).join(' ');
-	}
+    }
+    
+    formatPerms(perm: string) {
+		return perm
+				.toLowerCase()
+				.replace(/(^|"|_)(\S)/g, (s) => s.toUpperCase())
+				.replace(/_/g, ' ')
+				.replace(/Guild/g, 'Server')
+				.replace(/Use Vad/g, 'Use Voice Acitvity');
+    }
 };
+
+// Exports
+export {Utilities};

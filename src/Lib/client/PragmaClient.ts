@@ -2,16 +2,20 @@
 import {Client, Collection} from 'eris';
 
 // Files
-import {} from '../index';
+import {Datifier, Logger, Utilities} from '../index';
 
 // Class
-class KichiChanClient extends Client {
+class PragmaClient extends Client {
+    public datifier: typeof Datifier;
+    public logger: typeof Logger;
+    
     public db: any;
     public prefix: any;
-    
+
+    public commands: Map<string, Command> = new Map();
     
     constructor() {
-        super(process.env.DISCORD ? process.env.DISCORD : "NzU4MDYxNTM4OTYyNTcxMzY1.X2pd0g.1MA4MMzf3QUAeZ-VTNER7BpRdJg", {
+        super(process.env.DISCORD ? process.env.DISCORD : "NzY5NjA5ODc2OTM3NjM3OTE4.X5RhDQ.7cwfgldxRy1Drj8XZm4B2qP_PDc", {
             autoreconnect: true,
             messageLimit: 500,
             defaultImageFormat: 'png',
@@ -22,3 +26,6 @@ class KichiChanClient extends Client {
 
     }
 }; 
+
+// Exports
+export {PragmaClient};
