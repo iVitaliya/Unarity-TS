@@ -4,7 +4,7 @@ import {Client, Collection} from 'discord.js';
 // Files...
 import {} from '../index';
 
-class KichiChanClient extends Client {
+export class KichiChanClient extends Client {
     public db: any;
     public prefix: any;
     
