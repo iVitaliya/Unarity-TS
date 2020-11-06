@@ -9,4 +9,4 @@ export {KichiChanClient} from './client/KichiChanClient';
 export {ICmdConfig} from './commandHandler/interfaces/ICmdConfig';
 
 /* Util */
-export {searchQuery} from './utils/functions';
+export {searchQuery} from './Utils/functions';

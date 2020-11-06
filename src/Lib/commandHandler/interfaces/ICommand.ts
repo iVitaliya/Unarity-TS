@@ -1,5 +1,5 @@
 export interface ICommand {
     name: string;
-    aliases?: string[]
+    aliases: string[]
     description: string;
 };

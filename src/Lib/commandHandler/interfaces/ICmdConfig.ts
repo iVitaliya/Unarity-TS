@@ -1,6 +1,6 @@
 export interface ICmdConfig {
     name: string;
-    aliases?: string[];
+    aliases: string[] | string;
     minArgs?: number;
     maxArgs?: number;
     expectedArgs: string;

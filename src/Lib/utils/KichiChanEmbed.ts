@@ -1,17 +1,24 @@
 // Packages
 import {Guild, GuildMember, MessageEmbed} from 'discord.js';
 
-// Class of embeds.
-class KichiChanEmbed extends MessageEmbed {
-    private client;
-    private guild: Guild;
-    private member: GuildMember;
-    private title: string = '';
-    private description: string = '';
-    private colour: string = '';
+// Files
+import {KichiChanClient} from '../index';
 
-    constructor(client, guild: Guild, member: GuildMember, title: string, description: string, colour: string) {
+// Class of embeds.
+export class KichiChanEmbed extends MessageEmbed {
+    client: KichiChanClient;
+    guild: Guild;
+    member: GuildMember;
+    title: string = '';
+    description: string = '';
+    colour: string = '';
+
+    constructor(client: KichiChanClient, guild: Guild, member: GuildMember, title: string, description: string, colour: string) {
         super();
+
+        this.client = client;
+        this.guild = guild;
+        this.member = member;
         
         if (this.colour === 'main') {
             const gName = guild.name.length > 15 ? guild.name.slice(0, 15)+'...' : guild.name;
